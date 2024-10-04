@@ -47,8 +47,8 @@
           buildInputs = with pkgs; [ clang libcxx ];
 
           shellHook = ''
-            export CC=clang
-            export CXX=clang++
+            export CC=g++
+            export CXX=g++
             export CXXFLAGS="''${CXXFLAGS:-}"
 
             export CCACHE_DIR=$HOME/.ccache

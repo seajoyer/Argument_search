@@ -14,12 +14,12 @@ The project offers a C++ program that searches for the first occurrence of a spe
 
 For lucky Nix users, to build and run the project, it's enough to execute:
 #+begin_src shell
-nix run github:seajoyer/SupCo#argument_search -- <arg1 arg2 ...> --impure
+nix run github:seajoyer/Argument_search -- arg1 arg2 ... --impure
 #+end_src shell
 
 You can also start an isolated development shell with all the dependencies by simply running:
 #+begin_src shell
-nix develop github:seajoyer/SupCo#argument_search
+nix develop github:seajoyer/Argument_search
 #+end_src shell
 
 *** Manually
@@ -35,14 +35,14 @@ First, install dependencies, this is done differently in different systems:
 
 1. Clone the repository:
    #+begin_src shell
-   git clone https://github.com/seajoyer/SupCo
-   cd SupCo/Argument_search
+   git clone https://github.com/seajoyer/Argument_search
+   cd Argument_search
    #+end_src shell
 2. And once you are ready:
 
    ~make~ to build
 
-   ~make run ARGS="<arg1 arg2 ...>"~ to build & run
+   ~make run ARGS="arg1 arg2 ..."~ to build & run
 
    ~make clean~ to clean the ~build~ directory
 
