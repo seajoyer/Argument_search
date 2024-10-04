@@ -18,7 +18,7 @@
 
           nativeBuildInputs = with pkgs; [ gnumake ];
 
-          buildInputs = with pkgs; [ ];
+          buildInputs = with pkgs; [ libcxx ];
 
           buildPhase = ''
             make -j $($NIX_BUILD_CORES)
